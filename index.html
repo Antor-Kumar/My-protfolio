@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./sorry_boss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <section class="header" id="home">
+       <!-- <div class="header_container"> -->
+        <nav>
+          <img data-aos="zoom-in-down" class="logo nav_logo" src="./images/me.png" alt="">
+        <div class="nav_links" id="navLinks">
+          <i class="fa-solid fa-xmark hiden" onclick="hideMenu()"></i>
+           <ul data-aos="zoom-in-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#protfolio">Protfolio</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div id="btn" class="toggle-btn" data-aos="zoom-in-down">
+          <span id="btn-text">Dark</span>
+          <img id="btn-icon" src="images/moon.png" alt="">
+        </div>
+        <i class="fa-solid fa-bars hiden" onclick="showMenu()"></i>
+      </nav>
+      <div class="header_item">
+        <h2>Welcome To Visit My Portfolio</h2>
+        <h3>I'm <span id="auto_type"> Antor Kumar</span></h3>
+        <a href="./src/my cv.pdf" class="head-btn">Download cv</a>
+        <a href="" class="head-btn">Lat's Talk</a>
+        <div class="me_img">
+          <img data-aos="zoom-in" src="./images/about.png" alt="">
+        </div>
+        <div class="header_socials" data-aos="zoom-in">
+          <a href="https://www.linkedin.com/in/antor-kumar-481682219/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/8801708638785" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/antor.kumar.3154284" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://github.com/Antor-Kumar" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <!-- </div> -->
+  </section>
+   
+
+  <!-------- about Section ---------->
+  <section class="about_section" id="about">
+    <div class="about_container">
+      <div class="about_img" data-aos="slide-up" >
+        <img src="./images/about-1.png" alt="">
+      </div>
+      <div class="about_text" data-aos="zoom-in" >
+        <h2>About Me</h2>
+        <P>Hi, My Name's Antor. I am Front End web Designer. Skilled in
+          Html Css Bootstrap Javascript-related services like
+          PSD to html, Xd to html, Figma to html, Sketch to
+          html using Tailwind css, and Bootstrap 5. I also
+          make the website more and more interactive with
+          web animations. A responsive design makes your
+          website accessible to all users, regardless of their
+          device</P>
+        <div class="sub_item">
+          <p class="tab_links active_links" onclick="removeLink('eduction')">Eduction</p>
+          <p class="tab_links" onclick="removeLink('skill')">Skills</p>
+          <p class="tab_links" onclick="removeLink('experience')">Experience</p>
+        </div>
+        <div class="sub_item_text active_tabe" id="eduction">
+          <ul>
+            <li><span>2022</span><br>Internship at React js From European It</li>
+            <li><span>2022</span><br>Web DevelopMent training at European It</li>
+            <li><span>2023</span><br>Diploma In Computer Technology</li>
+          </ul>
+        </div>
+        <div class="sub_item_text" id="skill">
+          <ul>
+            <li><span>HTML</span><br>Hypertext Markup Language</li>
+            <li><span>CSS</span><br>Cascading Style Sheets</li>
+            <li><span>JS</span><br>JavaScript</li>
+          </ul>
+        </div>
+        <div class="sub_item_text" id="experience">
+          <ul>
+            <li><span>PSD To Html</span><br>Convert Code Psd to Html</li>
+            <li><span>Figma to Html</span><br>Convert Code Figma to Html</li>
+            <li><span>Sketch to Html</span><br>Convert Code Sketch to Html</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- What i do section --->
+  <section class="skill" id="skill">
+    <h2 data-aos="zoom-in">What I Do</h2>
+    <div class="skill-container">
+      <div class="skill-item" data-aos="slide-up">
+        <span><i class="fa-brands fa-app-store-ios"></i></span>
+        <h3>Web Designer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero eligendi ut alias beatae saepe.</p>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="skill-item" data-aos="slide-up">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h3>Psd to Html</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero eligendi ut alias beatae saepe.</p>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="skill-item" data-aos="slide-up">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h3>Figma to Html</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero eligendi ut alias beatae saepe.</p>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="skill-item" data-aos="slide-up">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h3>Xd to Html</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero eligendi ut alias beatae saepe.</p>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="skill-item" data-aos="slide-up">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h3>Skitch to Html</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero eligendi ut alias beatae saepe.</p>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="skill-item" data-aos="slide-up">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h3>I Skilled</h3>
+        <div class="skill-sub-item">
+          <div>
+            <p>Html 5</>
+          </div>
+          <div>
+            <p>Css 3</p>
+          </div>
+          <div>
+            <p>Bootstrap</p>
+          </div>
+          <div>
+            <p class="tj">Tailwind</p>
+          </div>
+          <div>
+            <p class="tj">JavaScript</p>
+          </div>
+        </div>
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- my protfolio section -->
+  <section class="protfolio" id="protfolio">
+      <h2 data-aos="zoom-in">Portfolio</h2>
+    <div class="protfolio_container">
+      <div class="protfolio_item" data-aos="slide-up">
+        <div>
+          <img src="images/fn-1.jpg" alt="">
+        </div>
+        <h3>This is a Crypto Currency payment <br> portfolio</h3>
+        <p>
+          <a  href=""><button class="protfolio_btn">Demo</button></a>
+          <a href=""><button class="protfolio_btn">Github</button></a>
+        </p>
+      </div>
+      <div class="protfolio_item" data-aos="slide-up">
+        <div>
+          <img src="images/fn-2.jpg" alt="">
+        </div>
+        <h3>Ecommerce Website Using HTML And<br> CSS</h3>
+        <p>
+          <a href=""><button>Demo</button></a>
+          <a href=""><button>Github</button></a>
+        </p>
+      </div>
+      <div class="protfolio_item" data-aos="slide-up">
+        <div>
+          <img src="images/all-2.png" alt="">
+        </div>
+        <h3>It's look like Personal Portfolio<br> website </h3>
+        <p>
+          <a href=""><button>Demo</button></a>
+          <a href=""><button>Github</button></a>
+        </p>
+      </div>
+      <div class="protfolio_item" data-aos="slide-up">
+        <div>
+          <img src="images/fn-4.jpg" alt="">
+        </div>
+        <h3>Simple React Project in GameDay<br> Catering</h3>
+        <p>
+          <a href=""><button>Demo</button></a>
+          <a href=""><button>Github</button></a>
+        </p>
+      </div>
+      <div class="protfolio_item" data-aos="slide-up">
+        <div>
+          <img src="images/fn-5.png" alt="">
+        </div>
+        <h3>Simple React Project in Darwin<br> Travel</h3>
+        <p>
+          <a href=""><button>Demo</button></a>
+          <a href=""><button>Github</button></a>
+        </p>
+      </div>
+      <div class="protfolio_item" data-aos="slide-up">
+        <div>
+          <img src="images/fn-6.jpg" alt="">
+        </div>
+        <h3>This is Social Media Website using<br> bootstrap</h3>
+        <p>
+          <a href=""><button>Demo</button></a>
+          <a href=""><button>Github</button></a>
+        </p>
+      </div>
+    </div>
+  </section>
+<!--------- contact section -------->
+<section class="contact" id="contact">
+   <div class="contact_container">
+      <h2 data-aos="zoom-in">Contact With Me</h2>
+      <div class="contact_item">
+          <div class="left" data-aos="slide-up">
+              <div contact_img>
+                <img src="./images/contact_img.jpg" alt="">
+              </div>
+              <h3>I'm Antor</h3>
+              <h4 class="con_text">Connect with me via Massage or Call</h4>
+              <p>Phone: <span>+01708638785</span></p>
+              <p>Email: <span>antorkumar122@gmail.com</span></p>
+              <p>Address: <span>Mirpur,Dhaka</span></p>
+              <h5>Find With Me</h5>
+              <div class="contact-Links">
+                <a href="https://www.linkedin.com/in/antor-kumar-481682219/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/8801708638785" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="https://www.facebook.com/antor.kumar.3154284" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://github.com/Antor-Kumar" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+          </div>
+          <div class="right" data-aos="slide-up">
+              <div class="login-box">
+                <form action="" onsubmit="sendEmail(); reset(); return false;">
+                  <div class="name">
+                    <div class="user-box">
+                      <input type="text" id="first_name"  class="first_name" required>
+                      <label for="first_name"><i class="fa-solid fa-user"></i>First Name</label>
+                    </div>
+                    <div class="user-box">
+                      <input type="text" id="last_name" class="first_name" required>
+                      <label for="last_name"><i class="fa-solid fa-user"></i>Last Name</label>
+                    </div>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="phone_number" required>
+                    <label for="phone_number"><i class="fa-solid fa-square-phone"></i>Phone Number</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i>Enter Email</label>
+                  </div>
+                  <div class="user-box">
+                    <textarea name=""  id="message" cols="30" rows="12" required></textarea>
+                    <label for="message"><i class="fa-solid fa-message"></i>You Message</label>
+                  </div>
+                  <button>Submit</button>
+                </form>
+              </div>
+          </div>
+      </div>
+   </div>
+</section>
+<!-- footer section -->
+<section class="footer">
+    
+</section>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#auto_type", {
+      strings: ["Front End web developer", "Skilled in", "HTML 5", "Css 3", "Bootstrap", "Tailwind Css", "JavaScript", "PSD to html", "Figma to html"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    });
+  </script>
+  <script>
+    var navLink=document.getElementById("navLinks");
+      function showMenu() {
+        navLink.style.right = "0";
+        console.log('click show menu');  
+      }
+      
+      function hideMenu(){
+        navLink.style.right ="-200px";
+        console.log('click hide menu');
+      }
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
